@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Book Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">📚</div>
+      <div>
+        <h1>Library Book Search</h1>
+        <p>Search books by title, author or category</p>
+      </div>
+    </header>
+
+    <section class="search-panel">
+      <div class="search-row">
+        <input id="searchInput" type="text"
+               placeholder="Enter title, author or category"
+               autocomplete="off">
+        <select id="searchType">
+          <option value="title">Title — Binary Search</option>
+          <option value="author">Author — HashMap</option>
+          <option value="category">Category — HashMap</option>
+        </select>
+        <button id="searchBtn">Search</button>
+        <button id="allBtn" class="secondary">Show All</button>
+      </div>
+      <div id="message" class="message"></div>
+    </section>
+
+    <section class="stats">
+      <div><strong id="bookCount">0</strong><span>Total Books</span></div>
+      <div><strong id="availableCount">0</strong><span>Available</span></div>
+      <div><strong id="resultCount">0</strong><span>Results</span></div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Books</h2>
+        <span id="algorithmBadge">Ready</span>
+      </div>
+      <div id="results" class="grid"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
